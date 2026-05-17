@@ -7,7 +7,7 @@ function App() {
 
   useEffect(() => {
     // The Frontend reaches out to the Backend Engine
-    axios.get('http://localhost:5000/')
+    axios.get('https://sovereign-architecture-backend.onrender.com/')
       .then((response) => {
         setServerState(response.data.message);
         setStatus(response.data.status);
